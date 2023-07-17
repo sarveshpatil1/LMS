@@ -36,8 +36,9 @@
 </head>
 <body>
 
-{% include 'components/header.html' %}
 {% include 'components/modals.html' %}
+{% include 'components/header.html' %}
+{% block content %} {% endblock %}
 {% include 'components/footer.html' %}
 
 
