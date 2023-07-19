@@ -6,8 +6,12 @@ from django.conf.urls.static import static
 
 urlpatterns = [
                   path('base', views.BASE, name='BASE'),
+                  path('404', views.pagenotfound, name='404'),
                   path('', views.home, name='home'),
-                  path('singlecourse', views.singlecourse, name='singlecourse'),
+                  path('courses', views.singlecourse, name='singlecourse'),
+                  path('courses/filterdata', views.filterdata, name="filterdata"),
+                  path('course/<slug:slug>', views.coursedetails, name="coursedetails"),
+                  path('search', views.searchcourse, name='searchcourse'),
                   path('contactus', views.contactus, name='contactus'),
                   path('aboutus', views.aboutus, name='aboutus'),
                   path('accounts/', include('django.contrib.auth.urls')),
