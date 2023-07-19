@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="23626128-0f29-45ca-a588-b6c9eb78a979" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/LMSapp/migrations/0003_level_course_level.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/course-not-found.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/course-not-found1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/ajax/course.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/course/course_details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/error/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/search/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LMS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LMS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LMSapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LMSapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LMSapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LMSapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Main/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Main/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Main/contactus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Main/contactus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Main/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Main/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Main/singlecourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Main/singlecourse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Slx3NBu66E5OrAraQJJFfM3HnN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/jitenderkumar/PycharmProjects/djangoProject/djangoProject/djangoProject/LMS/static/assets/img",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/assets/img" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LMS" type="Python.DjangoServer" factoryName="Django server">
+      <module name="LMS" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="LMS.settings" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="SDK_NAME" value="Python 3.9 (LMS)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23626128-0f29-45ca-a588-b6c9eb78a979" name="Changes" comment="" />
+      <created>1689734768419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689734768419</updated>
+      <workItem from="1689734769940" duration="441000" />
+      <workItem from="1689735222201" duration="62000" />
+      <workItem from="1689735296374" duration="41000" />
+      <workItem from="1689769941205" duration="17000000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
