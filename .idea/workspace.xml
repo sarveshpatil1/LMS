@@ -5,31 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23626128-0f29-45ca-a588-b6c9eb78a979" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/LMSapp/migrations/0003_level_course_level.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/course-not-found.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/img/course-not-found1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/ajax/course.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/course/course_details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/error/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/search/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LMS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LMS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/checkout/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/course/mycourse.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LMSapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LMSapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LMSapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LMSapp/user_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/user_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LMSapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Main/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Main/aboutus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Main/contactus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Main/contactus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Main/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Main/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Main/singlecourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Main/singlecourse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ajax/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ajax/course.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/course/course_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/course/course_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search/search.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,25 +55,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/jitenderkumar/PycharmProjects/djangoProject/djangoProject/djangoProject/LMS/static/assets/img",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Work/3 term Python/project2/LMS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/assets/img" />
@@ -95,10 +88,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="LMS.settings" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
-      <option name="SDK_NAME" value="Python 3.9 (LMS)" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -125,6 +117,8 @@
       <workItem from="1689735222201" duration="62000" />
       <workItem from="1689735296374" duration="41000" />
       <workItem from="1689769941205" duration="17000000" />
+      <workItem from="1689801741310" duration="5356000" />
+      <workItem from="1689869688308" duration="25494000" />
     </task>
     <servers />
   </component>

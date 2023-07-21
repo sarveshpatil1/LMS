@@ -4,6 +4,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 urlpatterns = [
                   path('base', views.BASE, name='BASE'),
                   path('404', views.pagenotfound, name='404'),
@@ -19,5 +20,9 @@ urlpatterns = [
                   path('accounts/doLogin', user_login.DO_LOGIN, name='doLogin'),
                   path('accounts/profile', user_login.PROFILE, name='profile'),
                   path('accounts/profile_update', user_login.Profile_Update, name='profileUpdate'),
-                  path('admin/', admin.site.urls)
+                  path('checkout/<slug:slug>', views.checkout,name='checkout'),
+                  path('admin/', admin.site.urls),
+                  path('mycourse', views.mycourse, name='mycourse'),
+                  path('paidregistered/<slug:slug>', views.paidregistered, name='paidregistered'),
+
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
