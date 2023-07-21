@@ -1,6 +1,8 @@
 from django.contrib import admin
 from .models import *
+from django.contrib.admin import AdminSite
 
+admin.site.site_header = 'AUTHOR COURSE DASHBOARD'
 
 class what_you_learn_TubulurinLine(admin.TabularInline):
     model = what_to_learn

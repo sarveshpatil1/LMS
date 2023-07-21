@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.models import User, Group
 from django.contrib.auth import authenticate, login, logout
@@ -56,7 +56,11 @@ def DO_LOGIN(request):
                                          password=password)
         if user != None:
             login(request, user)
-            return redirect('home')
+            if user.groups.filter(name="Course Author Group").exists():
+                admin_url = reverse('admin:index')
+                return redirect(admin_url)
+            else:
+                return redirect('home')
         else:
             messages.error(request, 'Email and Password Are Invalid !')
             return redirect('login')

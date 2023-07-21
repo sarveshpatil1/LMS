@@ -20,7 +20,7 @@ urlpatterns = [
                   path('accounts/profile', user_login.PROFILE, name='profile'),
                   path('accounts/profile_update', user_login.Profile_Update, name='profileUpdate'),
                   path('checkout/<slug:slug>', views.checkout, name='checkout'),
-                  path('admin/', admin.site.urls),
+                  path('author', admin.site.urls),
                   path('mycourse', views.mycourse, name='mycourse'),
                   path('paidregistered/<slug:slug>', views.paidregistered, name='paidregistered'),
                   path('register_course', views.register_course_details, name='registerCourse'),
