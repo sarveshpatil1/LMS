@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 from django.contrib.auth import authenticate, login, logout
 from .EmailBackEnd import EmailBackEnd
-
+from .models import Author
 
 def REGISTER(request):
     if request.method == "POST":
@@ -27,7 +27,20 @@ def REGISTER(request):
 
         )
         user.set_password(password)
+
+        selected_value = request.POST.get('btnradio')
+        if selected_value == 'auther':
+            firstname = request.POST.get('firstname')
+            lastname = request.POST.get('lastname')
+            auther = Author(name=firstname + " " + lastname)
+            auther.save()
+
         user.save()
+        if selected_value == 'auther':
+            user.is_staff = True
+            group = Group.objects.get(name="Course Author Group")
+            user.groups.add(group)
+            user.save()
         return redirect('login')
 
     return render(request, 'registration/register.html')
