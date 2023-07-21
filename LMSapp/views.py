@@ -98,7 +98,7 @@ def coursedetails(request, slug):
     course_id = Course.objects.get(slug=slug)
     try:
         check_enroll = UserCourse.objects.get(user=request.user, course=course_id)
-    except UserCourse.DoesNotExist:
+    except Exception as e:
         check_enroll = None
 
     course = Course.objects.filter(slug=slug)
