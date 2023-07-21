@@ -150,11 +150,13 @@ def checkout(request, slug):
 
 
 def mycourse(request):
-    courses = UserCourse.objects.filter(user=request.user)
-    context = {
+    if request.user.is_authenticated:
+        courses = UserCourse.objects.filter(user=request.user)
+        context = {
         'course': courses
-    }
-    return render(request, 'course/mycourse.html', context)
+        }
+        return render(request, 'course/mycourse.html', context)
+    return redirect('home')
 
 
 def paidregistered(request,slug):

@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23626128-0f29-45ca-a588-b6c9eb78a979" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/checkout/checkout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/course/mycourse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LMSapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LMSapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LMSapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LMSapp/user_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/user_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LMSapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Main/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Main/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Main/singlecourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Main/singlecourse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ajax/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ajax/course.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/course/course_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/course/course_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search/search.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +31,19 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4e7e616e-c335-4039-aec0-171c11e0067b" />
+        <option name="url" value="https://github.com/sarveshpatil1/LMS.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -118,7 +116,7 @@
       <workItem from="1689735296374" duration="41000" />
       <workItem from="1689769941205" duration="17000000" />
       <workItem from="1689801741310" duration="5356000" />
-      <workItem from="1689869688308" duration="25494000" />
+      <workItem from="1689869688308" duration="25963000" />
     </task>
     <servers />
   </component>
