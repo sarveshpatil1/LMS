@@ -4,3 +4,4 @@ from django.apps import AppConfig
 class LmsappConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'LMSapp'
+    verbose_name = 'Learning Management System'

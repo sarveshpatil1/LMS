@@ -4,6 +4,7 @@ from django.template.loader import render_to_string
 from django.http import JsonResponse
 from django.db.models import Sum
 from django.contrib import messages
+from .forms import Course_Detail_Form
 
 
 def BASE(request):
@@ -94,7 +95,7 @@ def searchcourse(request):
 def coursedetails(request, slug):
     category = Categories.get_all_category(Categories)
     time_duration = Video.objects.filter(course__slug=slug).aggregate(sum=Sum('time_duration'))
-
+    membership=request.user.groups.filter(name="gold membership").exists()
     course_id = Course.objects.get(slug=slug)
     try:
         check_enroll = UserCourse.objects.get(user=request.user, course=course_id)
@@ -140,11 +141,11 @@ def checkout(request, slug):
     elif request.method == "POST":
         name = request.POST.get('first_name')
         course = UserCourse(
-                user=request.user,
-                course=course,
-            )
+            user=request.user,
+            course=course,
+        )
         course.save()
-        messages.success(request, 'payment successful ' + str(name) + ' you have enrolled in the course '+str(slug))
+        messages.success(request, 'payment successful ' + str(name) + ' you have enrolled in the course ' + str(slug))
         return redirect('mycourse')
     return render(request, 'checkout/checkout.html', context)
 
@@ -153,24 +154,50 @@ def mycourse(request):
     if request.user.is_authenticated:
         courses = UserCourse.objects.filter(user=request.user)
         context = {
-        'course': courses
+            'course': courses
         }
         return render(request, 'course/mycourse.html', context)
     return redirect('home')
 
 
-def paidregistered(request,slug):
+def paidregistered(request, slug):
     course = Course.objects.get(slug=slug)
     if request.method == "POST":
         email = request.POST.get('email')
         course = UserCourse(
-                user=request.user,
-                course=course,
-            )
+            user=request.user,
+            course=course,
+        )
         course.save()
-        messages.success(request, 'payment successful ' + email + ' you have enrolled in the course'+course)
+        messages.success(request, 'payment successful ' + email + ' you have enrolled in the course' + course)
         return redirect('mycourse')
     context = {
         'category': "category"
     }
     return render(request, 'error/404.html', context)
+
+
+def register_course_details(request):
+    if request.method == "GET":
+        course_form = Course_Detail_Form();
+        return render(request, 'registration/register_course.html', {"course_form": course_form})
+    else:
+        formset = Course_Detail_Form(request.POST, request.FILES)
+        if formset.is_valid():
+            formset.save()
+            messages.success(request, 'Course detail added')
+            return redirect('registerCourse')
+        else:
+            field_errors = formset.errors.as_data()
+
+            # Concatenate error messages for each field into a single string
+            error_message = "Invalid Data. "
+            for field_name, errors in field_errors.items():
+                error_message += f"{field_name}: {', '.join(errors[0].messages)}. "
+            messages.error(request, error_message)
+            return render(request, 'registration/register_course.html', {"course_form": formset})
+
+
+def auther_course_details(request):
+
+    return render(request, "course/author_course_detail.html")

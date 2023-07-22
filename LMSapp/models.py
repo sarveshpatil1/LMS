@@ -1,4 +1,4 @@
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, AbstractUser
 from django.db import models
 from django.utils.text import slugify
 from django.db.models.signals import pre_save
@@ -17,6 +17,7 @@ class Categories(models.Model):
 class Author(models.Model):
     author_profile = models.ImageField(upload_to="Media/author")
     name = models.CharField(max_length=100, null=True)
+    user_name = models.CharField(max_length=100, null=True)
     about_author = models.TextField()
 
     def __str__(self):
@@ -112,3 +113,7 @@ class UserCourse(models.Model):
 
     def __str__(self):
         return self.user.first_name+" - "+self.course.title
+
+# class UserMembership(AbstractUser):
+#     user = models.ForeignKey(User,on_delete=models.CASCADE)
+#     is_gold_member = models.BooleanField(default=False)

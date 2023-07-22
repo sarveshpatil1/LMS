@@ -1,15 +1,15 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 from django.contrib.auth import authenticate, login, logout
 from .EmailBackEnd import EmailBackEnd
+from .models import *
 
 
 def REGISTER(request):
     if request.method == "POST":
         username = request.POST.get('username')
         email = request.POST.get('email')
-        password = request.POST.get('password')
 
         # check email
         if User.objects.filter(email=email).exists():
@@ -21,13 +21,42 @@ def REGISTER(request):
             messages.warning(request, 'Username are Already exists !')
             return redirect('register')
 
+        firstname = request.POST.get('firstname')
+        lastname = request.POST.get('lastname')
+        password = request.POST.get('password')
         user = User(
             username=username,
             email=email,
+            first_name=firstname,
+            last_name=lastname,
 
         )
-        user.set_password(password)
-        user.save()
+
+        selected_value = request.POST.get('btnradio')
+
+        if selected_value == 'student':
+            user.set_password(password)
+            user.save()
+            group = Group.objects.get(name="free members")
+            user.groups.add(group)
+            user.save()
+
+        elif selected_value == 'auther':
+
+            auther = Author(
+                name=firstname + " " + lastname,
+                user_name=username)
+            auther.save()
+            user.is_staff = True
+            user.save()
+            group = Group.objects.get(name="Course Author Group")
+            user.groups.add(group)
+            user.set_password(password)
+            user.save()
+        elif selected_value == 'gold_student':
+            group = Group.objects.get(name="gold members")
+            user.groups.add(group)
+            user.save()
         return redirect('login')
 
     return render(request, 'registration/register.html')
@@ -43,7 +72,11 @@ def DO_LOGIN(request):
                                          password=password)
         if user != None:
             login(request, user)
-            return redirect('home')
+            if user.groups.filter(name="Course Author Group").exists():
+                admin_url = reverse('admin:index')
+                return redirect(admin_url)
+            else:
+                return redirect('home')
         else:
             messages.error(request, 'Email and Password Are Invalid !')
             return redirect('login')
