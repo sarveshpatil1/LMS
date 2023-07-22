@@ -1,5 +1,5 @@
-# LMS
-We are building a learning management system where the authors can post their own courses and students can create their account to learn the published courses.
+# Nex Learn
+We are building a E-Learning platform where the authors can post their own courses and students can create their account to learn the published courses.
 
 The Home page and login:
 
