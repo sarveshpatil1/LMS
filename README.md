@@ -1,4 +1,6 @@
-# Nex Learn
+![logo](https://github.com/sarveshpatil1/LMS/assets/50295990/5a2443a4-aac6-4d7f-b839-85e41ac39980)
+
+
 We are building a E-Learning platform where the authors can post their own courses and students can create their account to learn the published courses.
 
 The Home page and login:
