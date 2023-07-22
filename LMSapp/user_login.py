@@ -53,10 +53,24 @@ def REGISTER(request):
             user.groups.add(group)
             user.set_password(password)
             user.save()
+
         elif selected_value == 'gold_student':
-            group = Group.objects.get(name="gold members")
-            user.groups.add(group)
-            user.save()
+            context = {
+                'user_name': username,
+                'first_name': firstname,
+                'last_name': lastname,
+                'user_email': email,
+                'user_password': password,
+            }
+            return render(request, "checkout/membership_checkout.html", context)
+        #
+        # user.set_password(password)
+        # user.save()
+        # group = Group.objects.get(name="gold members")
+        # user.groups.add(group)
+        # user.save()
+        else:
+            pass
         return redirect('login')
 
     return render(request, 'registration/register.html')
@@ -106,3 +120,27 @@ def Profile_Update(request):
 
 def PROFILE(request):
     return render(request, "registration/profile.html")
+
+
+def GOLD_REGISTER(request):
+    if request.method == "POST":
+        username = request.POST.get('billing_user_name')
+        email = request.POST.get('billing_user_email')
+        firstname = request.POST.get('billing_first_name')
+        lastname = request.POST.get('billing_last_name')
+        password = request.POST.get('billing_user_password')
+        user = User(
+            username=username,
+            email=email,
+            first_name=firstname,
+            last_name=lastname,
+        )
+
+        user.set_password(password)
+        user.save()
+        group = Group.objects.get(name="gold members")
+        user.groups.add(group)
+        user.save()
+        return redirect('login')
+
+    return render(request, 'registration/register.html')

@@ -161,51 +161,64 @@
 
                     <div class="modal-body">
                         <!-- Form Signup -->
-                        <form class="mb-5" method="post" action="{% url 'register' %}">
+                         <form class="mb-5" method="post" action="{% url 'register' %}">
+                    {% csrf_token %}
+                    <!-- Username -->
+                    <div class="form-group mb-5">
+                        <label for="modalSignupUsername1">
+                            Username
+                        </label>
+                        <input type="text" class="form-control" id="modalSignupUsername1" placeholder="John" name="username" required>
+                    </div>
 
-                            <!-- Username -->
-                            <div class="form-group mb-5">
-                                <label for="modalSignupUsername">
-                                    Username
-                                </label>
-                                <input type="text" class="form-control" id="modalSignupUsername" placeholder="John12" name="username">
-                            </div>
-                    <!-- firstname -->
+                    <!-- Email -->
+                    <div class="form-group mb-5">
+                        <label for="modalSignupEmail1">
+                            Email
+                        </label>
+                        <input type="email" class="form-control" id="modalSignupEmail1" placeholder="johndoe@creativelayers.com" name="email" required>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                        <label for="modalSignupPassword3">
+                            Password
+                        </label>
+                        <input type="password" class="form-control" id="modalSignupPassword3" placeholder="**********" name="password" required>
+                    </div>
+<!-- firstname -->
                             <div class="form-group mb-5">
                                 <label for="modalSignupFirstname">
                                     First Name
                                 </label>
-                                <input type="text" class="form-control" id="modalSignupFirstname" placeholder="John" name="firstname">
+                                <input type="text" class="form-control" id="modalSignupFirstname" placeholder="John" name="firstname" required>
                             </div>
                              <!-- lastname -->
                             <div class="form-group mb-5">
                                 <label for="modalSignupLastname">
                                     Last Name
                                 </label>
-                                <input type="text" class="form-control" id="modalSignupLastname" placeholder="Doe" name="lastname">
-                            </div>
-                            <!-- Email -->
-                            <div class="form-group mb-5">
-                                <label for="modalSignupEmail">
-                                    Username or Email
-                                </label>
-                                <input type="email" class="form-control" id="modalSignupEmail" placeholder="johndoe@creativelayers.com" name="email">
+                                <input type="text" class="form-control" id="modalSignupLastname" placeholder="Doe" name="lastname" required>
                             </div>
 
-                            <!-- Password -->
-                            <div class="form-group mb-5">
-                                <label for="modalSignupPassword">
-                                    Password
-                                </label>
-                                <input type="password" class="form-control" id="modalSignupPassword" placeholder="**********" name="password">
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" value="student" id="btnradio1" autocomplete="off" checked>
+                                <label class="btn btn-outline-primary" for="btnradio1">Free Student Account</label>
+
+                                <input type="radio" class="btn-check" name="btnradio" value="gold_student" id="btnradio2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btnradio2">Gold Student Account</label>
+
+                                <input type="radio" class="btn-check" name="btnradio" value="auther" id="btnradio3" autocomplete="off" >
+                                <label class="btn btn-outline-primary" for="btnradio3">Instructor</label>
+
                             </div>
 
-                            <!-- Submit -->
-                            <button class="btn btn-block btn-primary" type="submit">
-                                SIGN UP
-                            </button>
+                    <!-- Submit -->
+                    <button class="btn btn-block btn-primary" type="submit">
+                        SIGN UP
+                    </button>
 
-                        </form>
+                </form>
 
                         <!-- Text -->
                         <p class="mb-0 font-size-sm text-center">

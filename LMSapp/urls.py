@@ -18,6 +18,7 @@ urlpatterns = [
                   path('accounts/register', user_login.REGISTER, name='register'),
                   path('accounts/doLogin', user_login.DO_LOGIN, name='doLogin'),
                   path('accounts/profile', user_login.PROFILE, name='profile'),
+                  path('accounts/goldregister', user_login.GOLD_REGISTER, name='gold_member_register'),
                   path('accounts/profile_update', user_login.Profile_Update, name='profileUpdate'),
                   path('checkout/<slug:slug>', views.checkout, name='checkout'),
                   path('author', admin.site.urls),

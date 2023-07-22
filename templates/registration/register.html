@@ -33,7 +33,7 @@
                 <h3 class="mb-6">Sign Up and Start Learning!</h3>
                 {% include 'components/msg.html' %}
                 <!-- Form Register -->
-                <form class="mb-5" method="post" action="register">
+                <form class="mb-5" method="post" action="{% url 'register' %}">
                     {% csrf_token %}
                     <!-- Username -->
                     <div class="form-group mb-5">
@@ -72,6 +72,7 @@
                                 </label>
                                 <input type="text" class="form-control" id="modalSignupLastname" placeholder="Doe" name="lastname" required>
                             </div>
+
 
                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                                 <input type="radio" class="btn-check" name="btnradio" value="student" id="btnradio1" autocomplete="off" checked>

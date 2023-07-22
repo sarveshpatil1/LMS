@@ -95,12 +95,14 @@ def searchcourse(request):
 def coursedetails(request, slug):
     category = Categories.get_all_category(Categories)
     time_duration = Video.objects.filter(course__slug=slug).aggregate(sum=Sum('time_duration'))
-    membership=request.user.groups.filter(name="gold membership").exists()
     course_id = Course.objects.get(slug=slug)
+    membership = request.user.groups.filter(name="gold members").exists()
+    print(membership)
     try:
         check_enroll = UserCourse.objects.get(user=request.user, course=course_id)
     except Exception as e:
         check_enroll = None
+
 
     course = Course.objects.filter(slug=slug)
     if course.exists():
@@ -113,6 +115,7 @@ def coursedetails(request, slug):
         'category': category,
         'time_duration': time_duration,
         'enrol_status': check_enroll,
+        'gold_member':membership
     }
     return render(request, 'course/course_details.html', context)
 

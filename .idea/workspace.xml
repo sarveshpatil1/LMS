@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23626128-0f29-45ca-a588-b6c9eb78a979" name="Changes" comment="Pushing Changes">
+      <change afterPath="$PROJECT_DIR$/templates/checkout/membership_checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LMSapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LMSapp/user_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/user_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LMSapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/img/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ajax/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ajax/course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/checkout/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/checkout/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/components/modals.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/modals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/course/course_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/course/course_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +68,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Work/3 term Python/project2/LMS/static/assets/img&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Work/3 term Python/project2/LMS/templates/checkout&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -76,6 +84,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Work\3 term Python\project2\LMS\templates\checkout" />
       <recent name="C:\Work\3 term Python\project2\LMS\static\assets\img" />
       <recent name="$PROJECT_DIR$/static/assets/img" />
     </key>
@@ -122,7 +131,9 @@
       <workItem from="1689869688308" duration="26052000" />
       <workItem from="1689947483295" duration="1524000" />
       <workItem from="1689963003148" duration="327000" />
-      <workItem from="1690007055808" duration="438000" />
+      <workItem from="1690007055808" duration="796000" />
+      <workItem from="1690046578864" duration="9829000" />
+      <workItem from="1690063079732" duration="2306000" />
     </task>
     <task id="LOCAL-00001" summary="Pushing Changes">
       <created>1689980924023</created>
