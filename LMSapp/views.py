@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
-
+from django.views import View
 from .models import *
 from django.template.loader import render_to_string
 from django.http import JsonResponse, response, HttpResponse, HttpResponseRedirect
@@ -9,17 +9,23 @@ from django.contrib import messages
 from .forms import Course_Detail_Form
 
 
-def BASE(request):
-    return render(request, 'base.html')
+class BaseView(View):
+    def get(self, request):
+        return render(request, 'base.html')
 
 
-def home(request):
-    categories = Categories.objects.all().order_by('id')[0:5]
-    course = Course.objects.filter(status='PUBLISH').order_by('-id')
-    context = {"category": categories, "course": course}
-    response = render(request, 'Main/home.html', context)
-    response.delete_cookie('user_login_enrollment_msg')
-    return response
+class HomeView(View):
+    def get(self, request):
+        if request.user.groups.filter(name="Course Author Group").exists():
+            admin_url = reverse('admin:index')
+            return redirect(admin_url)
+
+        categories = Categories.objects.all().order_by('id')[0:]
+        course = Course.objects.filter(status='PUBLISH').order_by('-id')
+        context = {"category": categories, "course": course}
+        response = render(request, 'Main/home.html', context)
+        response.delete_cookie('user_login_enrollment_msg')
+        return response
 
 
 def singlecourse(request):
@@ -170,9 +176,10 @@ def checkout(request, slug):
 
 def mycourse(request):
     if request.user.is_authenticated:
+        categories = Categories.objects.all().order_by('id')[0:]
         courses = UserCourse.objects.filter(user=request.user)
         context = {
-            'course': courses
+            'course': courses, "category": categories
         }
         return render(request, 'course/mycourse.html', context)
     return redirect('home')
