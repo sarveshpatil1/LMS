@@ -3,11 +3,12 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from .views import *
 
 urlpatterns = [
-                  path('base', views.BASE, name='BASE'),
+                  path('base', BaseView.as_view(), name='BASE'),
                   path('404', views.pagenotfound, name='404'),
-                  path('', views.home, name='home'),
+                  path('', HomeView.as_view(), name='home'),
                   path('courses', views.singlecourse, name='singlecourse'),
                   path('courses/filterdata', views.filterdata, name="filterdata"),
                   path('course/<slug:slug>', views.coursedetails, name="coursedetails"),

@@ -59,9 +59,11 @@
                             All Categories
                         </a>
                         {% for i in category %}
+                        {% if forloop.counter <= 6 %}
                         <a class="btn-sm btn-pill me-1 mb-1 text-dark fw-medium px-6" id="pills-art-tab" data-bs-toggle="tab" href="#pills-{{i.id}}" role="tab" aria-controls="pills-{{i.id}}" aria-selected="false">
                             {{i.name}}
                         </a>
+                        {% endif %}
                         {% endfor %}
                     </div>
                 </div>
@@ -181,7 +183,6 @@
 
 
             {% for cat in category %}
-
 
                 <div class="tab-pane fade" id="pills-{{cat.id}}" role="tabpanel" aria-labelledby="pills-art-tab">
                     <!-- Items -->
@@ -325,6 +326,7 @@
 
             <div class="row row-cols-2 row-cols-md-3 row-cols-xl-5 row-cols-wd-6">
                 {% for category in category %}
+                {% if forloop.counter <= 5 %}
                 <div class="col mb-md-6 mb-4 px-2 px-md-4">
                     <!-- Card -->
                     <a href="" class="card bg-lavender hover-gradient-1 rounded-lg p-md-5 p-3 h-210p text-center lift">
@@ -339,6 +341,7 @@
                         </div>
                     </a>
                 </div>
+                {% endif %}
                 {% endfor %}
             </div>
         </div>
