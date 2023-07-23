@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="23626128-0f29-45ca-a588-b6c9eb78a979" name="Changes" comment="Pushing Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LMSapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Main/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Main/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Main/singlecourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Main/singlecourse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/checkout/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/checkout/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/course/course_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/course/course_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/course/mycourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/course/mycourse.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +125,8 @@
       <workItem from="1690007055808" duration="796000" />
       <workItem from="1690046578864" duration="9829000" />
       <workItem from="1690063079732" duration="2693000" />
-      <workItem from="1690078654368" duration="9899000" />
+      <workItem from="1690078654368" duration="10368000" />
+      <workItem from="1690142994880" duration="7765000" />
     </task>
     <task id="LOCAL-00001" summary="Pushing Changes">
       <created>1689980924023</created>
