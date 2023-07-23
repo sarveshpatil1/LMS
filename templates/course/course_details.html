@@ -2,6 +2,9 @@
 {% load course_tags %}
 {% block title %}{{course.title}}{% endblock %}
 {% block content %}
+<!-- Add these links to your head section -->
+
+
 <!-- BREADCRUMBS
     ================================================== -->
     <div class="container">
@@ -73,6 +76,9 @@
 
                 <!-- COURSE INFO TAB
                 ================================================== -->
+                <!-- Add 'data-bs-spy' and 'data-bs-target' attributes to the parent ul element -->
+
+
                 <div id="Overview" class="mb-8">
                     <ul class="nav course-tab-v1 border-bottom h4 mb-8">
                         <li class="nav-item">
@@ -551,7 +557,17 @@
                             </svg>
 
                             <span class="ms-2">2 days left at this price!</span>
+
                         </div>
+
+                        <div class="d-flex align-items-center text-alizarin mb-6">
+                            {% if user_login_enrollment_msg is None %}
+
+                            {% else %}
+                        <span class="ms-2">{{ user_login_enrollment_msg }}</span>
+                            {% endif %}
+                        </div>
+
                         {% if enrol_status is None %}
                         <a class="btn btn-primary btn-block mb-3" href="/checkout/{{ course.slug }}">ENROLL</a>
                         {% else %}

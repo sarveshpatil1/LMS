@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load course_tags %}
 {% block title %} checkout{% endblock %}
 {% block content %}
     <!-- PAGE TITLE
@@ -56,6 +57,20 @@
                                 <label for="expiry_month" class="">Expiry Month <abbr class="required" title="required">*</abbr></label>
                                 <input type="text" class="input-text " name="expiry_month" id="expiry_month" placeholder="MM/YY" value="" required>
                             </p>
+
+                          <p class="form-row form-row-wide address-field update_totals_on_change validate-required woocommerce-validated" id="billing_country_field" data-priority="40">
+                                <label for="billing_country" class="">Country <abbr class="required" title="required">*</abbr> (your card will be charged as per current conversion rate to USD)</label>
+                                <select name="billing_country" id="billing_country" class="country_to_state country_select  select2-hidden-accessible" autocomplete="country" tabindex="-1" aria-hidden="true" required>
+                                    <option value="">Select local currency of your card</option>
+                                    <option value="AUD">AUD</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="EURO">EURO</option>
+                                    <option value="YEN">YEN</option>
+                                    <option value="INR">INR</option>
+                                    <option value="USD">USD</option>
+                                    <option value="GBP ">GBP </option>
+                                </select>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -82,7 +97,12 @@
                                 <td class="product-total">
                                     <span class="woocommerce-Price-amount amount">
                                         <span class="woocommerce-Price-currencySymbol">$</span>
+                                        {% if gold_member == True %}
+                                        {% discount_calculation course.price course.discount %}
+                                        <del class="ms-3">{{ course.price }}</del>
+                                        {% else %}
                                         {{ course.price }}
+                                        {% endif %}
                                     </span>
                                 </td>
                             </tr>
@@ -92,7 +112,13 @@
 
                             <tr class="order-total">
                                 <th>Total</th>
-                                <td><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{ course.price }}</span></strong> </td>
+                                <td><strong><span class="woocommerce-Price-amount amount">
+                                <span class="woocommerce-Price-currencySymbol">$
+                                </span>{% if gold_member == True %}
+                                    {% discount_calculation course.price course.discount %}
+                                {% else %}
+                                        {{ course.price }}
+                                        {% endif %}</span></strong> </td>
                             </tr>
                         </tfoot>
                     </table>
