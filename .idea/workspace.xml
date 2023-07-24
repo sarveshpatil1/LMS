@@ -4,30 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23626128-0f29-45ca-a588-b6c9eb78a979" name="Changes" comment="Pushing Changes">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23-07-2023_13_23_[Changes]/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23-07-2023_13_23_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23-07-2023_13_23__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Media/Yt_Thumbnail/django.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Media/Yt_Thumbnail/django_qRq16EE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Media/author/man_icon_HiwLbLB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Media/featured_img/Python.svg_gN3U0Ry.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Media/featured_img/django.png" afterDir="false" />
+    <list default="true" id="23626128-0f29-45ca-a588-b6c9eb78a979" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LMSapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LMSapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LMSapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMSapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LMS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LMS/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Main/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Main/aboutus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Main/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Main/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/components/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/footer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/components/modals.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/components/modals.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/course/mycourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/course/mycourse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/password_reset_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/password_reset_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +127,8 @@
       <workItem from="1690046578864" duration="9829000" />
       <workItem from="1690063079732" duration="2693000" />
       <workItem from="1690078654368" duration="10368000" />
-      <workItem from="1690142994880" duration="8622000" />
+      <workItem from="1690142994880" duration="8683000" />
+      <workItem from="1690154633211" duration="3715000" />
     </task>
     <task id="LOCAL-00001" summary="Pushing Changes">
       <created>1689980924023</created>
